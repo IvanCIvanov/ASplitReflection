@@ -35,12 +35,12 @@
   },
   "name":"A Split Reflection",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"DungeonOne","path":"rooms/DungeonOne/DungeonOne.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"DungeonOne","path":"rooms/DungeonOne/DungeonOne.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
