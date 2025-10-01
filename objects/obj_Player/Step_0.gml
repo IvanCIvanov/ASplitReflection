@@ -1,75 +1,118 @@
-// Horizontal movement
-if (keyboard_check(vk_right)) {
-    x += xspeed;
-}
-if (keyboard_check(vk_left)) {
-    x -= xspeed;
-}
+#region Horizontal Movement
+
+// Calculate movement direction & speed
+var key_left = keyboard_check(vk_left);
+var key_right = keyboard_check(vk_right);
+hsp = (key_right - key_left) * xspeed;
+
+#endregion
+
+
+#region Vertical Movement
+
+var on_ground = place_meeting(x, y + 1, obj_floor);
+var jump_pressed = keyboard_check_pressed(vk_up);
+var jump_held = keyboard_check(vk_up);
+var jump_released = keyboard_check_released(vk_up);
+var boost = jump_speed * 0.15;
 
 // Apply gravity first
-vspeed += gravity_effect;
+vsp += gravity_effect;
 
-// Vertical movement with collision
-y += vspeed;
-
-// If we're now colliding with floor, push out and stop
-if (place_meeting(x, y, obj_floor)) {
-    // Only resolve collision if we were moving downward (landing on top)
-    if (vspeed > 0) {
-        // Push out of floor pixel by pixel (upward)
-        while (place_meeting(x, y, obj_floor)) {
-            y -= 1;
-        }
-        vspeed = 0;
-    }
-    // If moving upward (hitting from below), push down and stop upward movement
-    else if (vspeed < 0 ) {
-        // Push out of floor pixel by pixel (downward)
-        while (place_meeting(x, y, obj_floor)) {
-            y += 1;
-        }
-        vspeed = 0;
-    }
-	// If vspeed is 0 (edge case), push down to prevent phasing up
-    else {
-        // Push out downward (safer default - prevents going through platforms)
-        while (place_meeting(x, y, obj_floor)) {
-            y += 1;
-        }
-        vspeed = 0;
-    }
+// Coyote time
+if (on_ground) {
+	// Reset coyote_time when grounded
+	coyote_time = coyote_time_max;
+}
+else {
+	coyote_time--;
+	
+	// coyote_time cannot be negative
+	coyote_time = max(coyote_time, 0);
 }
 
-// Check if on ground AFTER collision resolution
-var on_ground = place_meeting(x, y + 1, obj_floor);
+// Jump buffer
+if (jump_pressed) {
+	// Reset jump_buffer when jump is pressed
+	jump_buffer = jump_buffer_max;
+}
+else {
+	jump_buffer--;
+	
+	// jump_buffer cannot be negative
+	jump_buffer = max(jump_buffer, 0);
+}
 
 // Jump start
-if (keyboard_check_pressed(vk_up) && on_ground) {
-    vspeed = jump_speed; // negative = upward (e.g., -10)
+if (jump_buffer > 0 && coyote_time > 0) {
+    vsp = jump_speed; // negative = upward
+	
+	// Reset jump_time
     jump_time = jump_time_max;
+	
+	// Reset coyote_time & jump_buffer to 0
+	coyote_time = 0;
+	jump_buffer = 0;
 }
 
 // Variable height jump (hold to jump higher)
-if (keyboard_check(vk_up) && jump_time > 0) {
-    vspeed += jump_speed * 0.15; // Add smaller upward boost
-    jump_time -= 1;
+if (jump_held && jump_time > 0) {
+	// Add small upward boost
+    vsp += boost;
+    jump_time--;
 }
 
 // If jump key released, stop "extra lift"
-if (keyboard_check_released(vk_up)) {
+if (jump_released) {
     jump_time = 0;
 }
 
-// Sprite alterations
-if (vspeed > 0 && !on_ground) {
+// Clamp vertical speed
+vsp = min(vsp, max_fall);
+
+#endregion
+
+
+#region Colliding w/ Walls
+
+if (place_meeting(x + hsp, y, obj_floor)) {
+	while (!place_meeting(x + sign(hsp), y, obj_floor)) {
+		x += sign(hsp);
+	}
+	
+	// Stop moving
+	hsp = 0;
+}
+
+if (place_meeting(x, y + vsp, obj_floor)) {
+	while (!place_meeting(x, y + sign(vsp), obj_floor)) {
+		y += sign(vsp);
+	}
+	
+	// Stop moving
+	vsp = 0;
+}
+
+#endregion
+
+// Apply movement
+x += hsp;
+y += vsp;
+
+
+#region Spritesetting
+
+if (vsp > 0 && !on_ground) {
     sprite_index = spr_playerFall;
 }
-else if (vspeed < 0 && !on_ground) {
+else if (vsp < 0 && !on_ground) {
     sprite_index = spr_playerJump;
 }
-else if ((keyboard_check(vk_left) || keyboard_check(vk_right)) && on_ground) {
+else if (hsp != 0 && on_ground) {
     sprite_index = spr_playerIdle; // replace this with run animation later
 }
-else if (on_ground) {
+else {
     sprite_index = spr_playerIdle;
 }
+
+#endregion
