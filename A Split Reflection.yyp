@@ -35,6 +35,8 @@
   },
   "name":"A Split Reflection",
   "resources":[
+    {"id":{"name":"Ivan movement","path":"notes/Ivan movement/Ivan movement.yy",},},
+    {"id":{"name":"Player Movement Old","path":"notes/Player Movement Old/Player Movement Old.yy",},},
     {"id":{"name":"obj_buttonPlatform","path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",},},
     {"id":{"name":"obj_buttonTemp","path":"objects/obj_buttonTemp/obj_buttonTemp.yy",},},
     {"id":{"name":"obj_enemyPlaceholder","path":"objects/obj_enemyPlaceholder/obj_enemyPlaceholder.yy",},},
@@ -49,7 +51,6 @@
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},},
     {"id":{"name":"spr_playerJump","path":"sprites/spr_playerJump/spr_playerJump.yy",},},
     {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},},
-    {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
