@@ -4,18 +4,22 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_playerBullet","path":"objects/obj_playerBullet/obj_playerBullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_henchman",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"max_hp","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"death_object","path":"objects/obj_characterParent/obj_characterParent.yy",},"resource":{"name":"obj_henchmanShatter","path":"objects/obj_henchmanShatter/obj_henchmanShatter.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_henchmanShatter",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_characterParent",
+    "path":"objects/obj_characterParent/obj_characterParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,15 +33,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"walk_speed","filters":[],"listItems":[],"multiselect":false,"name":"walk_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-2","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_henchmanIdle",
-    "path":"sprites/spr_henchmanIdle/spr_henchmanIdle.yy",
+    "name":"spr_henchmanWalk",
+    "path":"sprites/spr_henchmanWalk/spr_henchmanWalk.yy",
   },
   "spriteMaskId":{
     "name":"spr_henchmanIdle",

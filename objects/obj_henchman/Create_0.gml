@@ -1,5 +1,2 @@
-// Set horizontal speed
-hspeed = walk_speed;
-
-// Face the right direction
-image_xscale *= sign(walk_speed);
+// Choose a random direction to move in (left/right)
+hsp = choose(-move_speed, move_speed);
