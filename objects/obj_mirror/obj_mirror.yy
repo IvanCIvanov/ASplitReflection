@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mirrorPlaceholder",
-    "path":"sprites/spr_mirrorPlaceholder/spr_mirrorPlaceholder.yy",
+    "name":"spr_mirrorBroken",
+    "path":"sprites/spr_mirrorBroken/spr_mirrorBroken.yy",
   },
   "spriteMaskId":null,
   "visible":true,

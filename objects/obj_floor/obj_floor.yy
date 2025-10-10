@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite5",
-    "path":"sprites/Sprite5/Sprite5.yy",
+    "name":"spr_floorPlaceholder",
+    "path":"sprites/spr_floorPlaceholder/spr_floorPlaceholder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

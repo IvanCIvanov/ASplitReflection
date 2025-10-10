@@ -1,4 +1,8 @@
-with (obj_Player) {
-	other.image_xscale = image_xscale;
-	other.hspeed = 15 * sign(image_xscale);
+if (instance_exists(obj_Player)) {
+	with (obj_Player) {
+		// Determine direction
+		other.image_xscale = image_xscale;
+		// Set the speed
+		other.hspeed = other.shot_speed * sign(image_xscale);
+	}
 }

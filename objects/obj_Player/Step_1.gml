@@ -35,11 +35,13 @@ if (key_shoot && can_shoot) {
 	}
 	
 	// Determine position to spawn ice bullet
-	var shoot_x = x + sign(image_xscale) * 177;
-	var shoot_y = y - 22;
+	var shoot_x = x + sign(image_xscale) * 170;
+	var shoot_y = y - 28;
 	
 	// Shoot ice bullet
 	instance_create_layer(shoot_x, shoot_y, "Instances", obj_playerBullet);
+	
+	// TODO play shoot sound effect
 	
 	// Disable shooting
 	can_shoot = false;
