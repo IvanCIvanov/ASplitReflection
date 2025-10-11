@@ -1,7 +1,7 @@
 // Initialize starting coords
 start_x = x;
 start_y = y;
-
+visible = false;
 if (instance_exists(goto)) {
 	// Find target coords (e.g., coords of nearest existing buttonPlatGoto object)
 	var inst = instance_nearest(start_x, start_y, goto);

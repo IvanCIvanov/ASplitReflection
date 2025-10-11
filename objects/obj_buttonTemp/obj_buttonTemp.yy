@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_buttonTemp",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_buttonTemp",
   "overriddenProperties":[],

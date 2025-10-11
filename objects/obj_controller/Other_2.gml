@@ -1,2 +1,2 @@
 global.game_over = false;
-lives = 3;
+global.lives = 3;
