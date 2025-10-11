@@ -55,6 +55,7 @@
     {"id":{"name":"obj_shard","path":"objects/obj_shard/obj_shard.yy",},},
     {"id":{"name":"dungeonRoom1","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},},
     {"id":{"name":"practiceLevel","path":"rooms/practiceLevel/practiceLevel.yy",},},
+    {"id":{"name":"practiceLevel2","path":"rooms/practiceLevel2/practiceLevel2.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_buttonPlatform","path":"sprites/spr_buttonPlatform/spr_buttonPlatform.yy",},},
@@ -84,6 +85,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"dungeonRoom1","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},},
+    {"roomId":{"name":"practiceLevel2","path":"rooms/practiceLevel2/practiceLevel2.yy",},},
     {"roomId":{"name":"practiceLevel","path":"rooms/practiceLevel/practiceLevel.yy",},},
   ],
   "templateType":"game",

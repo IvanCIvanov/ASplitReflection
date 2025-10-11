@@ -13,7 +13,7 @@
   "name":"obj_Player",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"11",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"jump_height","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-17",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"jump_height","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-20",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"max_fallspeed","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"30",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"grav_speed","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
   ],
