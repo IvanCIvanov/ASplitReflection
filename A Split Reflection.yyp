@@ -54,6 +54,7 @@
     {"id":{"name":"obj_playerShatter","path":"objects/obj_playerShatter/obj_playerShatter.yy",},},
     {"id":{"name":"obj_shard","path":"objects/obj_shard/obj_shard.yy",},},
     {"id":{"name":"dungeonRoom1","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},},
+    {"id":{"name":"dungeonRoom2","path":"rooms/dungeonRoom2/dungeonRoom2.yy",},},
     {"id":{"name":"practiceLevel","path":"rooms/practiceLevel/practiceLevel.yy",},},
     {"id":{"name":"practiceLevel2","path":"rooms/practiceLevel2/practiceLevel2.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},
@@ -84,6 +85,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"dungeonRoom2","path":"rooms/dungeonRoom2/dungeonRoom2.yy",},},
     {"roomId":{"name":"dungeonRoom1","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},},
     {"roomId":{"name":"practiceLevel2","path":"rooms/practiceLevel2/practiceLevel2.yy",},},
     {"roomId":{"name":"practiceLevel","path":"rooms/practiceLevel/practiceLevel.yy",},},

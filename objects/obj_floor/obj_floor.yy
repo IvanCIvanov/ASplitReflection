@@ -37,5 +37,5 @@
     "path":"sprites/spr_floorPlaceholder/spr_floorPlaceholder.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
