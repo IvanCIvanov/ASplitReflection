@@ -20,16 +20,3 @@ event_inherited();
 // Apply velocity
 x += hsp;
 y += vsp;
-
-
-
-
-// Attack Code
-if(keyboard_check_pressed(ord("Z"))){
-	if(can_shoot){
-	var bullet =instance_create_layer(x,y,"Instances", obj_playerBullet);
-	bullet.hspeed = shot_speed * sign(image_xscale);
-	can_shoot = false;
-	alarm[0] =  shot_delay;
-	}
-}

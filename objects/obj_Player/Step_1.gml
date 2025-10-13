@@ -5,7 +5,7 @@ event_inherited();
 var key_left = keyboard_check(vk_left);
 var key_right = keyboard_check(vk_right);
 var press_jump = keyboard_check_pressed(vk_up);
-var key_shoot = keyboard_check(ord("V"));
+var key_shoot = keyboard_check(ord("Z"));
 
 // Calculate horizontal velocity
 hsp = (key_right - key_left) * move_speed;
@@ -28,6 +28,7 @@ if (press_jump && on_ground) {
 // Limit falling speed
 vsp = min(vsp, max_fallspeed);
 
+// Z - shoot ice projectiles
 if (key_shoot && can_shoot) {
 	// Change sprite to attack sprite if on the ground
 	if (on_ground) {

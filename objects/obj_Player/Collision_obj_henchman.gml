@@ -1,7 +1,7 @@
 /// Collision Event: obj_Player with obj_henchman
 
 
-//audio_play_sound(snd_playerDeath, 1, false); 
+// TODO audio_play_sound(snd_playerDeath, 1, false); 
 
 
 if (state != "dying") {
