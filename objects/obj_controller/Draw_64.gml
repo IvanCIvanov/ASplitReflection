@@ -11,7 +11,7 @@ var shard_sprite = spr_shard;
 var shard_y = draw_y + 256; // below the hearts
 
 // Draw one shard for each collected shard
-for (var i = 0; i < obj_Player.shards; i++) {
+for (var i = 0; i < obj_mirror.shards_collected; i++) {
     var shard_x = 88 +128*i; 
     draw_sprite_ext(
         shard_sprite,     // sprite

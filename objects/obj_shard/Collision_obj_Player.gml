@@ -1,3 +1,3 @@
-// TODO collect shard
-other.shards += 1;
+// Collect shard
+obj_mirror.shards_collected++;
 instance_destroy();

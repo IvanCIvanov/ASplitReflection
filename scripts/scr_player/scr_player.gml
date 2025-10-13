@@ -1,9 +1,11 @@
-/// @desc Function to inflict damage onto Player
-function damage_player() {
-	// Decrease player HP
-	obj_Player.hp--;
-	// If HP > 0, player is invuln for a short while & speed is halved
-	if (hp > 0) {
-		
-	}
+/// @desc Function to trigger player death sequence
+function player_death() {
+	// TODO audio_play_sound(snd_playerDeath, 1, false);
+	
+	// Player loses a life
+	global.lives--;
+	// Shattering animation plays
+	instance_create_layer(x, y, "Instances", obj_playerShatter);
+	// Destroy player object
+	instance_destroy();
 }

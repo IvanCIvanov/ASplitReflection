@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_1965F022","path":"rooms/dungeonRoom2/dungeonRoom2.yy",},
     {"name":"inst_11DF0BFF","path":"rooms/dungeonRoom2/dungeonRoom2.yy",},
     {"name":"inst_4095203","path":"rooms/dungeonRoom2/dungeonRoom2.yy",},
     {"name":"inst_7B5A3780","path":"rooms/dungeonRoom2/dungeonRoom2.yy",},
@@ -214,7 +213,6 @@
           3,14,8,8,-31,-2147483648,-61,8,-31,-2147483648,-2,8,-31,-2147483648,-61,8,-31,-2147483648,-626,8,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tileset0","path":"tilesets/tileset0/tileset0.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":64,"gridY":64,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_1965F022","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1965F022","objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":11.0,"x":-192.0,"y":-32.0,},
         {"$GMRInstance":"v2","%Name":"inst_11DF0BFF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11DF0BFF","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":121.99999,"scaleY":16.0,"x":2048.0,"y":3520.0,},
         {"$GMRInstance":"v2","%Name":"inst_4095203","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4095203","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":126.00001,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_7B5A3780","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B5A3780","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":246.0,"scaleY":2.0,"x":64.0,"y":0.0,},
