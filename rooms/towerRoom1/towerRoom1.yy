@@ -9,7 +9,6 @@
     {"name":"inst_10BBDF83","path":"rooms/towerRoom1/towerRoom1.yy",},
     {"name":"inst_7DAA84D4","path":"rooms/towerRoom1/towerRoom1.yy",},
     {"name":"inst_EB4F9F9","path":"rooms/towerRoom1/towerRoom1.yy",},
-    {"name":"inst_25F20E9E","path":"rooms/towerRoom1/towerRoom1.yy",},
     {"name":"inst_7D89523F","path":"rooms/towerRoom1/towerRoom1.yy",},
     {"name":"inst_37FC1766","path":"rooms/towerRoom1/towerRoom1.yy",},
     {"name":"inst_2EF6EA25","path":"rooms/towerRoom1/towerRoom1.yy",},
@@ -208,7 +207,6 @@
         {"$GMRInstance":"v2","%Name":"inst_10BBDF83","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10BBDF83","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":125.99999,"x":7936.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_7DAA84D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7DAA84D4","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":126.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_EB4F9F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EB4F9F9","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":246.0,"scaleY":2.0,"x":64.0,"y":0.0,},
-        {"$GMRInstance":"v2","%Name":"inst_25F20E9E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25F20E9E","objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":13.0,"scaleY":13.0,"x":-192.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_7D89523F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D89523F","objectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3968.0,"y":3008.0,},
         {"$GMRInstance":"v2","%Name":"inst_37FC1766","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37FC1766","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":84.00001,"scaleY":-8.0,"x":5312.0,"y":4032.0,},
         {"$GMRInstance":"v2","%Name":"inst_2EF6EA25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2EF6EA25","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":84.00001,"scaleY":10.0,"x":64.0,"y":3712.0,},
@@ -362,8 +360,8 @@
   ],
   "name":"towerRoom1",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Levels",
+    "path":"folders/Rooms/Levels.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

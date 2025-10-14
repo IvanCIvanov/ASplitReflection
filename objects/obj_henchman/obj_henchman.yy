@@ -13,8 +13,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"death_object","path":"objects/obj_characterParent/obj_characterParent.yy",},"resource":{"name":"obj_henchmanShatter","path":"objects/obj_henchmanShatter/obj_henchmanShatter.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_henchmanShatter",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Henchman",
+    "path":"folders/Objects/Henchman.yy",
   },
   "parentObjectId":{
     "name":"obj_characterParent",

@@ -4,6 +4,5 @@ if (global.lives > 0) {
 }
 else {
 	// Game over if player runs out of lives
-	// TODO go to Game Over screen instead of restarting game
-	game_restart();
+	room_goto(loseScreen);
 }

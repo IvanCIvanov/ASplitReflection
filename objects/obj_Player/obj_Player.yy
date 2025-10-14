@@ -19,8 +19,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"grav_speed","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":{
     "name":"obj_characterParent",

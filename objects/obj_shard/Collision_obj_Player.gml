@@ -1,3 +1,3 @@
 // Collect shard
-obj_mirror.shards_collected++;
+global.shards++;
 instance_destroy();

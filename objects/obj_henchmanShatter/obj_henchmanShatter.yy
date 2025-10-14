@@ -8,8 +8,8 @@
   "name":"obj_henchmanShatter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Henchman",
+    "path":"folders/Objects/Henchman.yy",
   },
   "parentObjectId":null,
   "persistent":false,

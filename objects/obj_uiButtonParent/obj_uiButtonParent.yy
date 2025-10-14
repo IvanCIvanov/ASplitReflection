@@ -1,0 +1,42 @@
+{
+  "$GMObject":"",
+  "%Name":"obj_uiButtonParent",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_uiButtonParent",
+  "overriddenProperties":[],
+  "parent":{
+    "name":"Menu Buttons",
+    "path":"folders/Objects/Menu Buttons.yy",
+  },
+  "parentObjectId":null,
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"destination","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"destination","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"dungeonRoom1","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"dungeonRoom1","varType":5,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_ui_button",
+    "path":"sprites/spr_ui_button/spr_ui_button.yy",
+  },
+  "spriteMaskId":null,
+  "visible":false,
+}

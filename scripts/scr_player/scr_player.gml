@@ -4,6 +4,8 @@ function player_death() {
 	
 	// Player loses a life
 	global.lives--;
+	// Reset shard counter
+	global.shards = 0;
 	// Shattering animation plays
 	instance_create_layer(x, y, "Instances", obj_playerShatter);
 	// Destroy player object
