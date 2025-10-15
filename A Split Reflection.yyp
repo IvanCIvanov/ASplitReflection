@@ -15,6 +15,8 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Elevator","folderPath":"folders/Objects/Elevator.yy","name":"Elevator","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Moving Platform","folderPath":"folders/Objects/Moving Platform.yy","name":"Moving Platform","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Henchman","folderPath":"folders/Objects/Henchman.yy","name":"Henchman","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu Buttons","folderPath":"folders/Objects/Menu Buttons.yy","name":"Menu Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -44,6 +46,7 @@
   },
   "name":"A Split Reflection",
   "resources":[
+    {"id":{"name":"fnt_debugText","path":"fonts/fnt_debugText/fnt_debugText.yy",},},
     {"id":{"name":"Ivan movement","path":"notes/Ivan movement/Ivan movement.yy",},},
     {"id":{"name":"Player Movement Old","path":"notes/Player Movement Old/Player Movement Old.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},

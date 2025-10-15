@@ -26,7 +26,11 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"platform","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"platform","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_buttonPlatform","path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_buttonPlatform","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

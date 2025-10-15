@@ -1,6 +1,4 @@
 if (can_move) {
-    visible = true;
-
     // Calculate distance to target
     var dist = point_distance(x, y, target_x, target_y);
 
@@ -13,8 +11,8 @@ if (can_move) {
        
 
         // Swap target for next button press
-        var nearestGoto = instance_nearest(x, y, obj_buttonPlatGoto);
-        var nearestReturn = instance_nearest(x, y, obj_buttonPlatReturn);
+        var nearestGoto = instance_nearest(x, y, gotoObj);
+        var nearestReturn = instance_nearest(x, y, returnObj);
 
         if (point_distance(x, y, nearestGoto.x, nearestGoto.y) < 3) {
             // currently at Goto, next is Return

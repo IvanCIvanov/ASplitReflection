@@ -1,6 +1,6 @@
 // Only allow press if cooldown finished
 if (alarm[0] <= 0) {
-    with (obj_buttonPlatform) {
+    with (platform) {
         can_move = true;
     }
 

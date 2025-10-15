@@ -6,8 +6,8 @@
   "name":"obj_buttonPlatGoto",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Moving Platform",
+    "path":"folders/Objects/Moving Platform.yy",
   },
   "parentObjectId":null,
   "persistent":false,

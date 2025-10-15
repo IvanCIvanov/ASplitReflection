@@ -6,8 +6,8 @@
   "name":"obj_elevatorPlatReturn",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Elevator",
+    "path":"folders/Objects/Elevator.yy",
   },
   "parentObjectId":null,
   "persistent":false,

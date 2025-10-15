@@ -9,8 +9,8 @@
   "name":"obj_buttonPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Moving Platform",
+    "path":"folders/Objects/Moving Platform.yy",
   },
   "parentObjectId":{
     "name":"obj_floor",
@@ -34,9 +34,12 @@
     {"$GMObjectProperty":"v1","%Name":"start_y","filters":[],"listItems":[],"multiselect":false,"name":"start_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"target_x","filters":[],"listItems":[],"multiselect":false,"name":"target_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"target_y","filters":[],"listItems":[],"multiselect":false,"name":"target_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"goto","filters":[
+    {"$GMObjectProperty":"v1","%Name":"gotoObj","filters":[
         "GMObject",
-      ],"listItems":[],"multiselect":false,"name":"goto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_buttonPlatGoto","path":"objects/obj_buttonPlatGoto/obj_buttonPlatGoto.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_buttonPlatGoto","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"gotoObj","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_buttonPlatGoto","path":"objects/obj_buttonPlatGoto/obj_buttonPlatGoto.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_buttonPlatGoto","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"returnObj","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"returnObj","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_buttonPlatReturn","path":"objects/obj_buttonPlatReturn/obj_buttonPlatReturn.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_buttonPlatReturn","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"can_move","filters":[],"listItems":[],"multiselect":false,"name":"can_move","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",

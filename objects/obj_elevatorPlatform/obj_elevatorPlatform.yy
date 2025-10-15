@@ -4,12 +4,18 @@
   "eventList":[],
   "managed":true,
   "name":"obj_elevatorPlatform",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonPlatform","path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",},"propertyId":{"name":"gotoObj","path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",},"resource":{"name":"obj_elevatorPlatGoto","path":"objects/obj_elevatorPlatGoto/obj_elevatorPlatGoto.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_elevatorPlatGoto",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonPlatform","path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",},"propertyId":{"name":"returnObj","path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",},"resource":{"name":"obj_elevatorPlatReturn","path":"objects/obj_elevatorPlatReturn/obj_elevatorPlatReturn.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_elevatorPlatReturn",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Elevator",
+    "path":"folders/Objects/Elevator.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_buttonPlatform",
+    "path":"objects/obj_buttonPlatform/obj_buttonPlatform.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,7 +32,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_elevatorPlatform",
     "path":"sprites/spr_elevatorPlatform/spr_elevatorPlatform.yy",

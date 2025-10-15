@@ -14,3 +14,13 @@ if (keyboard_check_pressed(ord("G"))) {
 if (keyboard_check_pressed(ord("L"))) {
 	global.lives = 3;
 }
+
+// Alt + I - Toggle godmode
+if (keyboard_check_pressed(ord("I"))) {
+	if (global.invuln) {
+		global.invuln = false;
+	}
+	else {
+		global.invuln = true;
+	}
+}
