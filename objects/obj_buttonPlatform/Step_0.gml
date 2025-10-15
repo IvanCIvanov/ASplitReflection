@@ -1,13 +1,37 @@
-// Platforms can move only when the player pushes the button
 if (can_move) {
-	visible = true;
-	move_towards_point(target_x, target_y, 5);
-	
-	
-	if (point_distance(x, y, target_x, target_y) < 5) {
+    visible = true;
+
+    // Calculate distance to target
+    var dist = point_distance(x, y, target_x, target_y);
+
+    // If close enough to target, snap and stop
+    if (dist <= 50){//3 = move speed
         x = target_x;
         y = target_y;
-        speed = 0;
-        can_move = false;
+		speed = 0
+        can_move = false;  // stop until next press
+       
+
+        // Swap target for next button press
+        var nearestGoto = instance_nearest(x, y, obj_buttonPlatGoto);
+        var nearestReturn = instance_nearest(x, y, obj_buttonPlatReturn);
+
+        if (point_distance(x, y, nearestGoto.x, nearestGoto.y) < 3) {
+            // currently at Goto, next is Return
+            if (nearestReturn != noone) {
+                target_x = nearestReturn.x;
+                target_y = nearestReturn.y;
+            }
+        } else {
+            // currently at Return, next is Goto
+            if (nearestGoto != noone) {
+                target_x = nearestGoto.x;
+                target_y = nearestGoto.y;
+            }
+        }
+
+    } else {
+        // Move toward target normally
+        move_towards_point(target_x, target_y, 3);
     }
 }
