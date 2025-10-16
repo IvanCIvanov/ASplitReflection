@@ -1,69 +1,37 @@
+var old_y = y
 
-var on_ground = place_meeting(x, y + 1, obj_floor);
-var jump_pressed = keyboard_check_pressed(vk_up);
-var jump_held = keyboard_check(vk_up);
-var jump_released = keyboard_check_released(vk_up);
+if (can_move) {
+    // Calculate distance to target
+    var dist = point_distance(x, y, target_x, target_y);
 
-
-
-if (keyboard_check_pressed(vk_up)) {
-	    if (place_meeting(x, y+1, obj_floor)) {
-	        vspeed = jump_height;
-	    }else{
-			vspeed = 0;
-		}
+    // If close enough to target, snap and stop
+    if (dist <= 50){//3 = move speed
+        x = target_x;
+        y = target_y;
+		speed = 0
+        can_move = false;  // stop until next press
 	}
 
-	// Gravity
-	if (!place_meeting(x, y+1, obj_floor)) {
-	    gravity = 0.25; 
-	}else{gravity = 0;}
+        // Swap target for next button press
+        var nearestGoto = instance_nearest(x, y, gotoObj);
+        var nearestReturn = instance_nearest(x, y, returnObj);
 
-	// Limit fall speed
-	vspeed = min(vspeed, 12);
-
-
-	// Collisions on Left/Right
-	if (keyboard_check(vk_left) && !place_meeting(x-move_speed,y,obj_floor)) {
-	    x -= move_speed;
-	    image_xscale = -1;
-	}
-	if (keyboard_check(vk_right) && !place_meeting(x+move_speed,y,obj_floor)) {
-	    x += move_speed;
-	    image_xscale = 1;
-	}
-	
-	if(place_meeting(x-move_speed, y, obj_floor)){
-		x += move_speed;
-	}
-	if(place_meeting(x+move_speed, y, obj_floor)){
-		x -= move_speed;
-	}
-
-
-if (place_meeting(x, y + vspeed, obj_floor)) {
-	while (!place_meeting(x, y + sign(vspeed), obj_floor)) {
-		y += sign(vspeed);
-	}
-	
-	// Stop moving
-	vspeed = 0;
+        if (point_distance(x, y, nearestGoto.x, nearestGoto.y) < 3) {
+            // currently at Goto, next is Return
+            if (nearestReturn != noone) {
+                target_x = nearestReturn.x;
+                target_y = nearestReturn.y;
+            }
+        } else if (nearestGoto != noone) {
+            // currently at Return, next is Goto
+           
+                target_x = nearestGoto.x;
+                target_y = nearestGoto.y;
+           
+        } else {
+        // Move toward target normally
+        move_towards_point(target_x, target_y, 3);
+    }
 }
 
-
-#region Spritesetting
-
-if (vspeed > 0 && !on_ground) {
-    sprite_index = spr_playerFall;
-}
-else if (vspeed < 0 && !on_ground) {
-    sprite_index = spr_playerJump;
-}
-else if (hspeed != 0 && on_ground) {
-    sprite_index = spr_playerIdle; // replace this with run animation later
-}
-else {
-    sprite_index = spr_playerIdle;
-}
-
-#endregion
+platform_vsp = y-old_y

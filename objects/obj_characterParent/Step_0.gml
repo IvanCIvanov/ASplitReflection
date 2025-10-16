@@ -15,7 +15,12 @@ if (place_meeting(x, y + vsp, obj_floor)) {
 	while (!place_meeting(x, y + sign(vsp), obj_floor)) {
 		y += sign(vsp);
 	}
+	//if(place_meeting(x,y + vsp, obj_elevatorPlatform)){
+	//	y-= 4
+	//}
 	
 	// Stop moving
-	vsp = 0;
+	vsp = 0; 
 }
+
+                                

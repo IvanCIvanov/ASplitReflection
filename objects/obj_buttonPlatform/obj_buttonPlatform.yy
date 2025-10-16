@@ -46,8 +46,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_buttonPlatform",
-    "path":"sprites/spr_buttonPlatform/spr_buttonPlatform.yy",
+    "name":"spr_movingPlatform",
+    "path":"sprites/spr_movingPlatform/spr_movingPlatform.yy",
   },
   "spriteMaskId":null,
   "visible":true,

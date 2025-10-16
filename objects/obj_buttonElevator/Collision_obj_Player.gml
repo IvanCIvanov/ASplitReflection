@@ -1,7 +1,7 @@
 // Only allow press if cooldown finished
 if (alarm[0] <= 0) {
-    with (obj_buttonPlatform) {
-		if(object_index == obj_buttonPlatform){
+    with (obj_elevatorPlatform) {
+		if(object_index == obj_elevatorPlatform){
         can_move = true;
 		}
     }

@@ -5,7 +5,7 @@ if (place_meeting(x + sign(hsp) * 5, y, obj_floor)) {
 }
 
 // If henchman is about to fall, turn the other way
-var left_bottom = place_meeting(bbox_left - 1, bbox_bottom + 1, obj_floor);
+var left_bottom = place_meeting(bbox_left - 2, bbox_bottom + 1, obj_floor);
 var right_bottom = place_meeting(bbox_right + 1, bbox_bottom + 1, obj_floor);
 
 if (hsp < 0 && !left_bottom) {

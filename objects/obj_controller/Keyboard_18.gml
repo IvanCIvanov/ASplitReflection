@@ -24,3 +24,22 @@ if (keyboard_check_pressed(ord("I"))) {
 		global.invuln = true;
 	}
 }
+
+// Alt + N - Next Room
+if(keyboard_check_pressed(ord("N"))){
+	room_goto_next();
+}
+
+
+// Alt + F - Toggle Freeze Enemy
+if (keyboard_check_pressed(ord("F"))) {
+    with (obj_henchman) {
+        if (!frozen) {
+            hsp = 0;
+            frozen = true;
+        } else {
+            hsp = choose(-move_speed, move_speed); 
+            frozen = false;
+        }
+    }
+}
