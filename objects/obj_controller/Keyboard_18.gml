@@ -43,3 +43,8 @@ if (keyboard_check_pressed(ord("F"))) {
         }
     }
 }
+
+// Alt + B - Warp to Boss Room
+if(keyboard_check_pressed(ord("B"))){
+	room_goto(bossRoom);
+}

@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_triggerBoss",
+  "%Name":"obj_bossShatter",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_triggerBoss",
+  "name":"obj_bossShatter",
   "overriddenProperties":[],
   "parent":{
     "name":"Boss",
@@ -30,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_triggerBoss",
-    "path":"sprites/spr_triggerBoss/spr_triggerBoss.yy",
+    "name":"spr_bossShatter",
+    "path":"sprites/spr_bossShatter/spr_bossShatter.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
