@@ -20,6 +20,18 @@ if (on_ground && !key_shoot) {
 if (press_jump && on_ground) {
     // Apply upwards velocity
     vsp = jump_height;
+	var randVar = irandom_range(1,3);
+	switch randVar{
+	case 1: 
+		audio_play_sound(snd_jump1,1, false);
+		break;
+	case 2: 
+		audio_play_sound(snd_jump2,1, false);
+		break;
+	case 3: 
+		audio_play_sound(snd_jump3,1, false);
+		break;
+	}
     
     // Change sprite to jumping sprite, start animation on frame 0
     if(vsp < 0){
@@ -27,7 +39,7 @@ if (press_jump && on_ground) {
         image_index = 0;
         image_speed = 1;
     }
-    // TODO play jump sound effect
+   
 }
 
 // Limit falling speed
@@ -35,6 +47,11 @@ vsp = min(vsp, max_fallspeed);
 
 // --- Shooting / Attack ---
 if (key_shoot && can_shoot && !attacking) {
+	if(global.shoot_PowerUp == true){
+		shot_delay = 20;
+		shot_speed = 20;
+		shot_count = 2;
+	}
     sprite_index = spr_playerAttack;
     image_index = 0;       // start animation
     image_speed = 1;       // normal speed
@@ -42,11 +59,17 @@ if (key_shoot && can_shoot && !attacking) {
     attack_pause = 0;      // last-frame pause counter
 
     // Spawn projectile
+	audio_play_sound(snd_playerBullet,1, false);
     var shoot_x = x + sign(image_xscale) * 170;
     var shoot_y = y - 28;
     instance_create_layer(shoot_x, shoot_y, "Instances", obj_playerBullet);
-
+	
     // Shooting cooldown
+	if(shot_count > 1){
+		alarm[1] = game_get_speed(gamespeed_fps) * .3;
+	}
+	
+	
     can_shoot = false;
     alarm[0] = shot_delay;
 }
@@ -72,16 +95,35 @@ if (attacking) {
     }
 } else if (!on_ground) {
     // Player is in the air: jumping/falling
-    if (vsp < 0){
+    if (vsp < 0) {
         sprite_index = spr_playerJump;
-    }
-    if (vsp > 0){
+    } else if (vsp > 0) {
+		if(!locked_to_elevator){
         sprite_index = spr_playerFall;
+		}
     }
 
-    image_speed = 1;  // let the jump animation play
-} else {
-    // Player is on the ground
-    if (hsp != 0) sprite_index = spr_playerRun;
-    else sprite_index = spr_playerIdle;
-}
+    image_speed = 1;
+} else if (hsp != 0) {
+    // Player is moving on the ground
+    sprite_index = spr_playerRun;
+    
+    // Example random variable usage (if you meant to add it here)
+    var randVar = irandom_range(1, 2);
+    // You could use randVar to randomize a footstep sound, for example
+	if(!audio_is_playing(snd_footsteps1)){
+	var randVal = irandom_range(1,2);
+	var step = step;
+	switch randVal{
+		case 1: step = snd_footsteps1;
+		break;
+		case 2: step = snd_footsteps2;
+		break;
+	}
+	
+	//audio_sound_pitch(step, .8);
+	audio_play_sound(step,1,false);
+	alarm[3] = game_get_speed(gamespeed_fps) * 1;
+	}
+} else  {
+    sprite_index = spr_playerIdle;}

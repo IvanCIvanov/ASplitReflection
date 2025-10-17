@@ -2,7 +2,7 @@ image_xscale = -2;	// increase boss size, also faces player
 image_yscale = 2;
 
 attack_interval = 180;	// how often the boss does an attack
-attack_radius = 600;	// if the player is within this radius, next attack will be a swipe
+attack_radius = 800;	// if the player is within this radius, next attack will be a swipe
 
 idle_imgspeed = 1;		// speed of idle animation
 attack_imgspeed = 1;	// speed of attack animation

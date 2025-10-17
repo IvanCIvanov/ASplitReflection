@@ -1,8 +1,8 @@
 /// @desc Function to trigger player death sequence
 function player_death() {
 	if (!global.invuln) {
-		// TODO audio_play_sound(snd_playerDeath, 1, false);
-	
+		 audio_play_sound(snd_shatter, 1, false);
+		
 		// Player loses a life
 		global.lives--;
 		// Reset shard counter

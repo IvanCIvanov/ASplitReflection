@@ -31,6 +31,9 @@ function snowball_attack() {
 	var spawn_x = x + 100 * sign(image_xscale);
 	var spawn_y = y + 384;
 	
+	
 	// Create new snowball instance
 	instance_create_layer(spawn_x, spawn_y, "Instances", obj_snowball);
+	
+	
 }

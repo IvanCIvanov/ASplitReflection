@@ -11,3 +11,8 @@ if (instance_exists(obj_boss)) {
 		other.hspeed = other.shot_speed * sign(image_xscale);
 	}
 }
+if (instance_exists(obj_Player)) {
+    var target = obj_Player; 
+    var dir = point_direction(x, y, target.x, target.y); 
+    direction = dir;
+}

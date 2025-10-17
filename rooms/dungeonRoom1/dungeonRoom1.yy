@@ -168,6 +168,7 @@
     {"name":"inst_5212E3D","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},
     {"name":"inst_58DCB931","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},
     {"name":"inst_26D86E80","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},
+    {"name":"inst_7B59EF89","path":"rooms/dungeonRoom1/dungeonRoom1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -368,6 +369,7 @@
         {"$GMRInstance":"v2","%Name":"inst_6509995A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6509995A","objectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":3456.0,},
         {"$GMRInstance":"v2","%Name":"inst_58DCB931","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58DCB931","objectId":{"name":"obj_DrawText2","path":"objects/obj_DrawText2/obj_DrawText2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":3200.0,},
         {"$GMRInstance":"v2","%Name":"inst_26D86E80","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_26D86E80","objectId":{"name":"obj_buttonElevator","path":"objects/obj_buttonElevator/obj_buttonElevator.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":2.0,"x":4608.0,"y":1536.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7B59EF89","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B59EF89","objectId":{"name":"obj_shootPowerUp","path":"objects/obj_shootPowerUp/obj_shootPowerUp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":3520.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

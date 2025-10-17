@@ -8,3 +8,6 @@ if (instance_exists(obj_boss)) {
 	// Destroy trigger object
 	instance_destroy();
 }
+
+audio_stop_sound(snd_ambientMusic);
+audio_play_sound(snd_bossMusic, 1, true);

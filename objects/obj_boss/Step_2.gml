@@ -20,6 +20,7 @@ if (boss_enraged()) {
 
 if (hp <= 0) {
 	// Create an instance of death_object, then destroys itself
+	audio_play_sound(snd_shatter, 1, false);
 	instance_create_layer(x, y, "Instances", death_object);
 	instance_destroy();
 }
