@@ -8,7 +8,7 @@ for (var i = 0; i < global.lives; i++) {
 
 
 // Draw shard count
-var shard_scale = 3; // 🔥 scale up the sprite 2x size
+var shard_scale = 3; //shard sprite scaled up the sprite 2x size
 var shard_sprite = spr_shard;
 var shard_y = 272; // below the hearts
 

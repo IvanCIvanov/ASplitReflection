@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-// Temporary variables for keyboard input
+// Variables for keyboard input
 var key_left = keyboard_check(vk_left);
 var key_right = keyboard_check(vk_right);
 var press_jump = keyboard_check(vk_up);
@@ -76,12 +76,12 @@ if (key_shoot && can_shoot && !attacking) {
 
 // --- Handle attack animation completion ---
 if (attacking) {
-    // Ensure sprite is attack sprite
+    // Ensure player uses attack sprite
     sprite_index = spr_playerAttack;
 
     // Let the sprite play through both frames
     if (image_index <= image_number - 1) {
-        image_speed = 1;      // play normally
+        image_speed = 1;      // play normal speed
     } else {
         // Last frame reached, start 1-second pause
         image_speed = 0;      // freeze last frame

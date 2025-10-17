@@ -3,15 +3,14 @@ event_inherited();
 
 // --- Elevator Lock System ---
 
-// Make sure we have a persistent variable
-// (in Create Event of player, include: locked_to_elevator = false;)
+// Persistent variable
 var elevator = instance_place(x, y + 1, obj_elevatorPlatform);
 
 if (elevator != noone && elevator.can_move) {
     // Lock player to elevator
     y += elevator.platform_vsp;
 
-    // Optionally, freeze player input only if standing on elevator
+    // Freeze player vertical movement only if standing on elevator
     if (place_meeting(x, y + 1, elevator)) {
        
         vsp = 0;

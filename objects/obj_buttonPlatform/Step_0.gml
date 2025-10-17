@@ -3,10 +3,10 @@ if (can_move) {
     var dist = point_distance(x, y, target_x, target_y);
 
     // If close enough to target, snap and stop
-    if (dist <= 50){//3 = move speed
+    if (dist <= 50){
         x = target_x;
         y = target_y;
-		speed = 0
+		speed = 00000
         can_move = false;  // stop until next press
        
 
@@ -14,7 +14,7 @@ if (can_move) {
         var nearestGoto = instance_nearest(x, y, gotoObj);
         var nearestReturn = instance_nearest(x, y, returnObj);
 
-        if (point_distance(x, y, nearestGoto.x, nearestGoto.y) < 3) {
+        if (point_distance(x, y, nearestGoto.x, nearestGoto.y) < 3) {//3 = move speed
             // currently at Goto, next is Return
             if (nearestReturn != noone) {
                 target_x = nearestReturn.x;
