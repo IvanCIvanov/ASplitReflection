@@ -3,5 +3,5 @@ attacking = false
 attack_pause = 0;
 
 if(global.jump_powerUp == true){
-	jump_height = -30;
+	jump_height = -24;
 }

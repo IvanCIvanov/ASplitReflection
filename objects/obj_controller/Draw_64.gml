@@ -27,14 +27,3 @@ for (var i = 0; i < global.shards; i++) {
 	    1                 // alpha
 	);
 }
-
-
-// Indicate if godmode is enabled
-if (global.invuln) {
-	draw_set_font(fnt_debugText);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_top);
-	draw_set_color(c_fuchsia);
-	
-	draw_text(16, 400, "Godmode enabled");
-}
