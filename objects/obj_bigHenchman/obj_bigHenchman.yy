@@ -8,7 +8,10 @@
   ],
   "managed":true,
   "name":"obj_bigHenchman",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"death_object","path":"objects/obj_characterParent/obj_characterParent.yy",},"resource":{"name":"obj_bigHenchmanShatter","path":"objects/obj_bigHenchmanShatter/obj_bigHenchmanShatter.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_bigHenchmanShatter",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_characterParent/obj_characterParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
+  ],
   "parent":{
     "name":"Henchman",
     "path":"folders/Objects/Henchman.yy",

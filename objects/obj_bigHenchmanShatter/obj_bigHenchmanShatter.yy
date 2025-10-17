@@ -1,10 +1,14 @@
 {
   "$GMObject":"",
   "%Name":"obj_bigHenchmanShatter",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_bigHenchmanShatter",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_henchmanShatter","path":"objects/obj_henchmanShatter/obj_henchmanShatter.yy",},"propertyId":{"name":"shard_yoffset","path":"objects/obj_henchmanShatter/obj_henchmanShatter.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
+  ],
   "parent":{
     "name":"Henchman",
     "path":"folders/Objects/Henchman.yy",

@@ -1,6 +1,6 @@
 // Ensure sprite faces the correct direction
 if (hsp != 0) {
-	image_xscale = 2.5*sign(hsp);
+	image_xscale = 2 * sign(hsp);
 }
 
 // Player death
